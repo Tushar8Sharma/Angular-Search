@@ -1,0 +1,16 @@
+<br>
+<div class="form-group">
+    <div class="md-col-4">
+        <label> Enter Employee Name: </label>
+        <div class="md-col-4">
+            <div class="active-cyan-3 active-cyan-4 mb-4 container">
+                <input class="form-control" #searchInput type="text" placeholder="Search" aria-label="Search">
+            </div>
+        </div>
+    </div>
+</div>
+<button type="submit" class="btn btn-primary" (click)=OnEmployeeSearch(searchInput.value)>
+    Search
+</button>
+
+      

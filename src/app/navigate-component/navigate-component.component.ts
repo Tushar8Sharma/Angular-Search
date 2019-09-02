@@ -6,10 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navigate-component.component.css']
 })
 export class NavigateCOmponentComponent implements OnInit {
-
   constructor() { }
-
   ngOnInit() {
   }
-
 }

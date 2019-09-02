@@ -9,7 +9,9 @@ import { NotFoundComponentComponent } from './not-found-component/not-found-comp
 import { FunctionCall } from '@angular/compiler';
 import { FollowerComponent } from './follower/follower.component';
 import { PostComponent } from './post/post.component';
- 
+import { EmployeeComponent } from './employee/employee.component';
+import { EmployeeSearchComponent } from './employee-search/employee-search.component';
+import { FilterPipe } from './filter-pipe.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,8 +19,10 @@ import { PostComponent } from './post/post.component';
     HomeComponentComponent,
     NotFoundComponentComponent,
     PostComponent,
-    
-    FollowerComponent
+    FollowerComponent,
+    EmployeeComponent,
+    EmployeeSearchComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
@@ -40,6 +44,10 @@ import { PostComponent } from './post/post.component';
       {
         path:'posts',
         component:PostComponent 
+      },
+      {
+        path:'employees-list',
+        component:EmployeeComponent 
       },
       {
         path:'**',
